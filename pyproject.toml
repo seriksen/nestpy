@@ -19,7 +19,8 @@ authors = [
 readme = "README.md"
 license = { file = "LICENSE" }
 dependencies = [
-    "numpy"
+    "numpy",
+    "pybind11"
 ]
 classifiers = [
     'Development Status :: 5 - Production/Stable',
