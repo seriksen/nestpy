@@ -1,5 +1,5 @@
 import unittest
-import nestpy
+import nestpy_dev as nestpy
 import platform
 
 class ConstructorTest(unittest.TestCase):
