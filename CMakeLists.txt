@@ -45,6 +45,8 @@ pybind11_add_module(_nestpy ${SOURCES} "src/nestpy/bindings.cpp")
 target_compile_definitions(_nestpy
     PRIVATE NESTPY_VERSION=${NESTPY_VERSION_INFO} NEST_VERSION=${NEST_VERSION}
 )
-set_target_properties(_nestpy PROPERTIES
-    LIBRARY_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/src/nestpy
-)
+
+install(TARGETS _nestpy DESTINATION nestpy)
+#set_target_properties(_nestpy PROPERTIES
+#    LIBRARY_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/src/nestpy
+#)
