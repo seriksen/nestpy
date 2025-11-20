@@ -4,7 +4,7 @@ import unittest
 class nestpyExamplesTest(unittest.TestCase):
 
     def test_readme_example(self):
-        import nestpy
+        import seriksen_nestpy as nestpy
         
         # This is same as C++ NEST with naming
         nc = nestpy.NESTcalc(nestpy.VDetector())
