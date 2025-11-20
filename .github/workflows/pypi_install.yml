@@ -36,5 +36,5 @@ jobs:
       - name: Upload to PyPI
         env:
           TWINE_USERNAME: __token__
-          TWINE_PASSWORD: ${{ secrets.PYPI_TEST_TOKEN }}
-        run: python -m twine upload --verbose -u "${TWINE_USERNAME}" -p "${TWINE_PASSWORD}" --repository-url https://test.pypi.org/legacy/ wheelhouse/*
+          TWINE_PASSWORD: ${{ secrets.pypi_password }}
+        run: python -m twine upload --verbose -u "${TWINE_USERNAME}" -p "${TWINE_PASSWORD}" wheelhouse/*
